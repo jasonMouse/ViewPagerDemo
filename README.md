@@ -1,2 +1,2 @@
 # ViewPagerDemo
-用于解决ViewPager+Fragment整体刷新数据的那点问题
+用于解决ViewPager+Fragment整体刷新数据问题，适用于 FragmentStatePageAdapter 和 FragmentPageAdapter
