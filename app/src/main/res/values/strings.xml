@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ViewPagerDemo</string>
+    <string name="str_page_name">这是第%d个页面</string>
+</resources>
