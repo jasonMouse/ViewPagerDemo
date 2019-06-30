@@ -4,7 +4,7 @@
 ![图片](https://github.com/jasonMouse/ViewPagerDemo/blob/master/app/src/main/assets/screen_1.jpg)  
 
 支持追加页面，插入页面，替换页面，删除页面四种操作，apk下载：  
-
+// https://raw.githubusercontent.com/jasonMouse/ViewPagerDemo/master/apk/demo.apk
 ![图片](https://github.com/jasonMouse/ViewPagerDemo/blob/master/app/src/main/assets/apk_download_path.jpg)  
 
 [特别鸣谢10头条：http://www.10tiao.com/html/169/201805/2650825533/1.html](http://www.10tiao.com/html/169/201805/2650825533/1.html)
