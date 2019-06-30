@@ -7,5 +7,5 @@
 
 ![图片](https://github.com/jasonMouse/ViewPagerDemo/blob/master/app/src/main/assets/apk_download_path.jpg)  
 <!--https://raw.githubusercontent.com/jasonMouse/ViewPagerDemo/master/apk/demo.apk-->
-[特别鸣谢10头条：http://www.10tiao.com/html/169/201805/2650825533/1.html](http://www.10tiao.com/html/169/201805/2650825533/1.html)
+[特别鸣谢10头条：http://www.10tiao.com/html/169/201805/2650825533/1.html](http://www.10tiao.com/html/169/201805/2650825533/1.html)  
 [特别鸣谢川峰大神：https://blog.csdn.net/lyabc123456/article/details/79797552](https://blog.csdn.net/lyabc123456/article/details/79797552)
