@@ -2,6 +2,7 @@ package com.mouse.viewpagerdemo.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.util.SparseArray;
@@ -16,7 +17,7 @@ import java.util.List;
  * @e-mail 1285760616@qq.com
  * @time 2018/3/22
  */
-public class BaseFragmentPagerAdapter extends FragmentStatePagerAdapter {
+public class BaseFragmentPagerAdapter extends FragmentPagerAdapter {
     private List<Fragment> mFragmentList;
     private FragmentManager mFragmentManager;
     /**
@@ -200,7 +201,7 @@ public class BaseFragmentPagerAdapter extends FragmentStatePagerAdapter {
      * 此方法不用position做返回值即可破解fragment tag异常的错误
      * 如果是 FragmentPagerAdapter，则需要添加上 @Override
      */
-    // @Override
+    @Override
     public long getItemId(int position) {
         // 获取当前数据的hashCode，其实这里不用hashCode用自定义的可以关联当前Item对象的唯一值也可以，只要不是直接返回position
         return mFragmentList.get(position).hashCode();
