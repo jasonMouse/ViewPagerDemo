@@ -988,6 +988,14 @@ public class SlidingMenu extends RelativeLayout {
         mViewAbove.setCurrentItem(ss.getItem());
     }
 
+    /**
+     * 是否需要自动适配状态栏，默认是最底层View，所以默认适配
+     * @param actionbarOverlay
+     */
+    public void setActionbarOverlay(boolean actionbarOverlay) {
+        this.mActionbarOverlay = actionbarOverlay;
+    }
+
     /* (non-Javadoc)
      * @see android.view.ViewGroup#fitSystemWindows(android.graphics.Rect)
      */

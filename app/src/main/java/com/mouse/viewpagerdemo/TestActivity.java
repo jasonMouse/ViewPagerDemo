@@ -109,7 +109,7 @@ public class TestActivity extends FragmentActivity implements View.OnClickListen
             case R.id.btn_delete:
                 if (mFragmentList.size() == 0) return;
                 mAdapter.removeFragment(curPosition);
-                refreshSlidingMenuTouchModeByIndex(curPosition);
+                refreshSlidingMenuTouchModeByIndex(vp_main.getCurrentItem());
                 break;
             case R.id.btn_replace:
                 curIndex = curIndex + 1;
@@ -118,12 +118,12 @@ public class TestActivity extends FragmentActivity implements View.OnClickListen
             case R.id.btn_insert:
                 curIndex = curIndex + 1;
                 mAdapter.insertFragment(curPosition, getFragment(String.format(strPageName, curIndex)));
-                refreshSlidingMenuTouchModeByIndex(curPosition);
+                refreshSlidingMenuTouchModeByIndex(vp_main.getCurrentItem());
                 break;
             case R.id.btn_append_one:
                 curIndex = curIndex + 1;
                 mAdapter.addFragment(getFragment(String.format(strPageName, curIndex)));
-                refreshSlidingMenuTouchModeByIndex(curPosition);
+                refreshSlidingMenuTouchModeByIndex(vp_main.getCurrentItem());
                 break;
             case R.id.btn_append_three:
                 List<Fragment> fragmentList = new ArrayList<>(3);
@@ -132,11 +132,11 @@ public class TestActivity extends FragmentActivity implements View.OnClickListen
                     fragmentList.add(getFragment(String.format(strPageName, curIndex)));
                 }
                 mAdapter.addFragmentList(fragmentList);
-                refreshSlidingMenuTouchModeByIndex(curPosition);
+                refreshSlidingMenuTouchModeByIndex(vp_main.getCurrentItem());
                 break;
             case R.id.btn_right:
                 if (slidingMenu.isMenuShowing()) {
-                    slidingMenu.toggle(false);
+                    slidingMenu.toggle(true);
                 }
                 vp_main.setCurrentItem(0);
                 break;
