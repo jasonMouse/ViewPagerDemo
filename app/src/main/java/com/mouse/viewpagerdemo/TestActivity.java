@@ -45,7 +45,7 @@ public class TestActivity extends FragmentActivity implements View.OnClickListen
         slidingMenu = (SlidingMenu) findViewById(R.id.slidingmenumain);
         slidingMenu.setMode(SlidingMenu.RIGHT);
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
-        slidingMenu.setTouchModeBehind(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        slidingMenu.setTouchModeBehind(SlidingMenu.TOUCHMODE_MARGIN);
         slidingMenu.setBehindWidth((int) (getResources().getDimension(R.dimen.dp200)));
         slidingMenu.setFadeEnabled(true);
         slidingMenu.setFadeDegree(0.5f);
@@ -86,6 +86,7 @@ public class TestActivity extends FragmentActivity implements View.OnClickListen
         btn_insert.setOnClickListener(this);
         btn_append_one.setOnClickListener(this);
         btn_append_three.setOnClickListener(this);
+        btn_right.setOnClickListener(this);
         vp_main.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
@@ -132,6 +133,12 @@ public class TestActivity extends FragmentActivity implements View.OnClickListen
                 }
                 mAdapter.addFragmentList(fragmentList);
                 refreshSlidingMenuTouchModeByIndex(curPosition);
+                break;
+            case R.id.btn_right:
+                if (slidingMenu.isMenuShowing()) {
+                    slidingMenu.toggle(false);
+                }
+                vp_main.setCurrentItem(0);
                 break;
         }
 
